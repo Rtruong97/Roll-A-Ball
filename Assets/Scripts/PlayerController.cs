@@ -8,15 +8,19 @@ public class PlayerController : MonoBehaviour {
     public float speed;
     public Text countText;
     public Text winText;
+    public Text scoreText;
+    public Text loseText;
 
     private Rigidbody rb;
     private int count;
+    private int score;
 
     void Start ()
     {
         rb = GetComponent<Rigidbody>();
         count = 0;
-        SetCountText();
+        score = 0;
+        SetAllText();
         winText.text = "";
     }
     void FixedUpdate ()
@@ -29,28 +33,45 @@ public class PlayerController : MonoBehaviour {
         rb.AddForce(movement * speed);
     }
 
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Pick Up"))
         {
             other.gameObject.SetActive(false);
             count = count + 1;
-            SetCountText();
+            score = score + 1;
+            SetAllText();
+        }
+
+        else if (other.gameObject.CompareTag("Enemy"))
+        {
+            other.gameObject.SetActive(false);
+            score = score - 1;
+            SetAllText();
+        }
+
+        if (count == 8)
+        {
+            transform.position = new Vector3(26.97f, transform.position.y, 0.5f);
         }
     }
 
-    void SetCountText ()
+    void SetAllText ()
     {
         countText.text = "Count: " + count.ToString();
-        if (count >=10)
+        scoreText.text = "Score: " + score.ToString();
+        if (score >= 16)
         {
-            winText.text = "You Win!";
+            winText.text = "You Finished with a score of: " + score.ToString();
         }
+
     }
     private void Update()
     {
          if (Input.GetKey("escape"))
             Application.Quit();
     }
-        
+   
+    
+
 }

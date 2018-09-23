@@ -1,8 +1,8 @@
 WindowsStandalone
 PlayerPath?
-D:/Users/ryan/Desktop/Roll a Ball/Build 2/Roll a Ball.exe
+D:/Users/ryan/Desktop/Roll a Ball.exe
 SceneListBegin?
-Assets/_Scenes/MiniGame.unity
+Assets/_Scenes/Mini Game.unity
 SceneListEnd?
 c422dd62785a6d0afa870fbd111886ce Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 7b803eb2910e9b4cd5e521ae07b9f7d6 Unity.TextMeshPro.dll:TMPro.TMP_Dropdown
@@ -121,10 +121,11 @@ e1ea12ca952c81d81a9a21fdf34446ed UnityEngine.HoloLens.dll:UnityEngine.EventSyste
 98d69a140ec0084cde3b6a5e09aea295 UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 dfd33ff9ae3ce8d7ca1f22b475ec2387 UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 96f3ea9f23b6f08e60710ebb4af49174 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
-3e6dfaee84f805ca5aad7cf6cf67cb0d Assembly-CSharp.dll:.PlayerController
+c93f96edf6c5b8e261fc941d5ac2f19a Assembly-CSharp.dll:.PlayerController
 f16835701e71dd5d6fb1fed4b7aff1d8 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 5b9b2f59726c6ff8c5be027e767006cf Assembly-CSharp.dll:.CameraController
 486cd95c82d8305219c352c06b776e1f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
+1f88a98a23b73fe8d6c5621434e94daa Assembly-CSharp.dll:.Movement
 eaf0bcdb10d442a4029d615f41d09957 Unity.TextMeshPro.dll:TMPro.TextContainer
 201273fb4f889724fb090164b7d6c657 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 486cd95c82d8305219c352c06b776e1f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
